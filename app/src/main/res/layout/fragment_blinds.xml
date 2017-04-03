@@ -1,0 +1,209 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yah.androidfinal.Lamp1"
+    android:textAlignment="center"
+    android:background="@android:color/black"
+    android:id="@+id/fragBlinds"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Bheader"
+            android:text="Blinds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+            android:textAlignment="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+<FrameLayout
+    android:layout_width="32dp"
+    android:layout_height="180dp"
+    android:layout_centerVertical="true"
+    android:layout_toLeftOf="@+id/blinds">
+        <SeekBar
+            android:layout_width="180dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:id="@+id/seekBarB"
+            android:rotation="90"
+            />
+</FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/blinds"
+            android:orientation="vertical"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+android:layout_below="@+id/Bheader"
+            android:layout_marginTop="50dp"
+
+
+            android:layout_centerInParent="true">
+
+
+            <Button
+                android:id="@+id/blind1"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+
+                android:maxHeight="25dp"
+                android:layout_margin="-5dp"
+                android:layout_marginBottom="-5dp"
+                android:layout_marginEnd="-5dp"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginRight="-5dp"
+                android:layout_marginStart="-5dp"
+                android:layout_marginTop="-5dp"
+                android:backgroundTint="@android:color/white"
+
+                />
+
+    <Button
+        android:id="@+id/blind2"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:maxHeight="25dp"
+
+        android:layout_margin="-5dp"
+        android:layout_marginBottom="-5dp"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="-5dp" />
+
+    <Button
+        android:id="@+id/blind3"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:maxHeight="25dp"
+
+        android:layout_margin="-5dp"
+        android:layout_marginBottom="-5dp"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="-5dp" />
+
+    <Button
+        android:id="@+id/blind4"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:maxHeight="25dp"
+
+        android:layout_margin="-5dp"
+        android:layout_marginBottom="-5dp"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="-5dp" />
+
+    <Button
+        android:id="@+id/blind5"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+
+        android:layout_margin="-5dp"
+        android:layout_marginBottom="-5dp"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="-5dp" />
+
+    <Button
+        android:id="@+id/blind6"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+
+        android:layout_margin="-5dp"
+        android:layout_marginBottom="-5dp"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="-5dp" />
+
+    <Button
+        android:id="@+id/blind7"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+
+        android:layout_margin="-5dp"
+        android:layout_marginBottom="-5dp"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="-5dp" />
+
+    <Button
+        android:id="@+id/blind8"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+
+        android:layout_margin="-5dp"
+        android:layout_marginBottom="-5dp"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="-5dp" />
+
+    <Button
+        android:id="@+id/blind9"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+
+        android:layout_margin="-5dp"
+        android:layout_marginBottom="-5dp"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="-5dp" />
+
+    <Button
+        android:id="@+id/blind10"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+
+
+        android:layout_margin="-5dp"
+        android:layout_marginBottom="-5dp"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="-5dp" />
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+
+            android:id="@+id/seekTextB"
+
+            android:layout_below="@+id/blinds"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+
+    </RelativeLayout>
+</FrameLayout>
