@@ -22,20 +22,6 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true" />
 
-<FrameLayout
-    android:layout_width="32dp"
-    android:layout_height="180dp"
-    android:layout_centerVertical="true"
-    android:layout_toLeftOf="@+id/blinds">
-        <SeekBar
-            android:layout_width="180dp"
-            android:layout_height="32dp"
-            android:layout_gravity="center"
-            android:id="@+id/seekBarB"
-            android:rotation="90"
-            />
-</FrameLayout>
-
         <LinearLayout
             android:id="@+id/blinds"
             android:orientation="vertical"
@@ -203,6 +189,20 @@ android:layout_below="@+id/Bheader"
             android:layout_below="@+id/blinds"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp" />
+
+        <FrameLayout
+            android:layout_width="32dp"
+            android:layout_height="180dp"
+            android:layout_alignTop="@+id/blinds"
+            android:layout_toStartOf="@+id/blinds">
+                <SeekBar
+                    android:layout_width="180dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/seekBarB"
+                    android:rotation="90"
+                    />
+        </FrameLayout>
 
 
     </RelativeLayout>

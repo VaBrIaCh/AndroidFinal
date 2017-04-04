@@ -16,7 +16,7 @@
             android:text="Lamp 1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView"
+            android:id="@+id/lamp1"
             tools:text="Lamp 1"
             android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
             android:textAlignment="center"

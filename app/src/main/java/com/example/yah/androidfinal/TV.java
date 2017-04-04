@@ -7,14 +7,13 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.ToggleButton;
 
-
-public class Lamp1 extends Fragment {
+public class TV extends Fragment {
 
     String str;
-    ToggleButton toggle;
+    EditText channel;
 
     @Override
     public void onCreate(Bundle b)
@@ -29,18 +28,18 @@ public class Lamp1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_lamp1, container, false);
+        View view = inflater.inflate(R.layout.fragment_tv, container, false);
 
-        TextView title = (TextView) view.findViewById(R.id.lamp1);
+        TextView title = (TextView) view.findViewById(R.id.tv);
         title.setText(str);
 
-        toggle = (ToggleButton) view.findViewById(R.id.toggleButton);
+        channel = (EditText) view.findViewById(R.id.channel);
 
         SharedPreferences preferences = getActivity().getSharedPreferences(str, Context.MODE_PRIVATE);
 
-        Boolean check = preferences.getBoolean(str, false);
+        String lastChannel = preferences.getString(str, "");
 
-        toggle.setChecked(check);
+        channel.setText(lastChannel);
 
         return view;
     }
@@ -50,7 +49,8 @@ public class Lamp1 extends Fragment {
         super.onDestroy();
         SharedPreferences sharedPref = getActivity().getSharedPreferences(str, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putBoolean(str, toggle.isChecked());
+        editor.putString(str, String.valueOf(channel.getText()));
+
         editor.commit();
     }
 

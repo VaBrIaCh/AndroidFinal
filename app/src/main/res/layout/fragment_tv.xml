@@ -1,0 +1,179 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yah.androidfinal.Lamp1"
+    android:textAlignment="center"
+    android:background="@android:color/black"
+    android:id="@+id/fraglamp1"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+            android:textAlignment="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toggleButton"
+            android:layout_below="@+id/tv"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/channel"
+            android:backgroundTint="@android:color/white"
+            android:background="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/ChannelLabel"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:text="Channel"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ChannelLabel"
+            android:layout_below="@+id/downNav"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textColor="@android:color/white"
+            android:textAlignment="center" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/upNav"
+            android:background="@drawable/uparrow"
+            android:backgroundTint="@android:color/white"
+            android:maxHeight="24dip"
+            android:maxWidth="44dip"
+            android:minHeight="2dp"
+            android:minWidth="48dip"
+            android:textAlignment="center"
+            android:layout_below="@+id/toggleButton"
+
+            android:layout_alignStart="@+id/downNav"
+            android:layout_toStartOf="@+id/rightNav" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/leftNav"
+            android:background="@drawable/leftarrow"
+            android:backgroundTint="@android:color/white"
+            android:minWidth="44dip"
+            android:layout_alignBaseline="@+id/enter"
+            android:layout_alignBottom="@+id/enter"
+            android:layout_toStartOf="@+id/upNav" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/downNav"
+            android:background="@drawable/downarrow"
+            android:backgroundTint="@android:color/white"
+            android:minWidth="44dip"
+            android:layout_below="@+id/enter"
+            android:layout_alignStart="@+id/channel"
+            android:layout_toStartOf="@+id/rightNav" />
+
+        <Button
+            android:text="ENTER"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/enter"
+            android:layout_centerHorizontal="true"
+
+            android:backgroundTint="@android:color/white"
+            android:minWidth="44dip"
+            android:layout_below="@+id/upNav"
+            android:layout_alignEnd="@+id/ChannelLabel" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rightNav"
+            android:background="@drawable/rightarrow"
+            android:backgroundTint="@android:color/white"
+            android:maxWidth="44dip"
+            android:minWidth="44dip"
+            android:layout_alignBottom="@+id/enter"
+            android:layout_toEndOf="@+id/enter"
+            android:layout_below="@+id/upNav" />
+
+        <TextView
+            android:text="Volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Vol"
+
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:layout_alignBottom="@+id/channel"
+            android:layout_alignStart="@+id/button11"
+            android:layout_alignEnd="@+id/button11"
+            android:layout_below="@+id/ChannelLabel" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button10"
+            android:background="@drawable/uparrow"
+            android:backgroundTint="@android:color/white"
+            android:layout_above="@+id/Vol"
+            android:layout_toStartOf="@+id/leftNav" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button11"
+            android:background="@drawable/downarrow"
+            android:backgroundTint="@android:color/white"
+            android:layout_below="@+id/Vol"
+            android:layout_alignStart="@+id/button10" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button12"
+            android:background="@drawable/uparrow"
+            android:backgroundTint="@android:color/white"
+            android:layout_alignBottom="@+id/ChannelLabel"
+            android:layout_toEndOf="@+id/rightNav" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button13"
+            android:background="@drawable/downarrow"
+            android:backgroundTint="@android:color/white"
+            android:layout_below="@+id/channel"
+            android:layout_alignStart="@+id/button12" />
+
+        <TextView
+            android:text="Channel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:layout_below="@+id/button12"
+            android:layout_alignEnd="@+id/button12"
+            android:layout_marginEnd="17dp" />
+
+    </RelativeLayout>
+</FrameLayout>

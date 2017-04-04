@@ -3,4 +3,16 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="LivingTypes">
+        <item>On/Off Lamp</item>
+        <item>Dimmer Light</item>
+        <item>Coloured Dimmer Light</item>
+        <item>Blinds</item>
+        <item>TV</item>
+
+    </string-array>
+
+
 </resources>
