@@ -10,75 +10,55 @@ import android.view.ViewGroup;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+// Living Room Dimmer Fragment by Chris Billings
 
-public class Lamp2 extends Fragment {
-
-
+public class Dimmer extends Fragment {
+    //String for housing the bundle argument that gets passed from the activity to the fragment.
     String str;
+    //The Boolean passed if a key/value set needs to be changed.
+    boolean unShare;
+    //The seekBar slider
     SeekBar seekbar;
-    String DEFAULT="0";
-    //LivingRoomActivity lr;
 
     @Override
-    public void onCreate(Bundle b)
-    {
+    public void onCreate(Bundle b) {
         super.onCreate(b);
-
+        //Get the activity arguments for use in the fragment.
         Bundle args =  this.getArguments();
         str= args.getString("deviceName");
+        unShare = args.getBoolean("delete");
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-
-        // Inflate the layout for this fragment
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView =  inflater.inflate(R.layout.fragment_lamp2, container, false);
-
+        //The header text which is based on the passed Listview clicked Item Name.
         TextView title = (TextView) rootView.findViewById(R.id.lamp2);
         title.setText(str);
-
+        //Shows the seek bar value percentage as text.
         final TextView seekBarValue = (TextView) rootView.findViewById(R.id.seekText);
 
+        //Uses sharedPreferences to store the seekbar progress.
         SharedPreferences preferences = getActivity().getSharedPreferences(str, Context.MODE_PRIVATE);
-        SharedPreferences preferences3;
-        preferences3 = getActivity().getSharedPreferences(str, Context.MODE_PRIVATE);
 
-        String lastProgress = preferences.getString(str, DEFAULT);
+        //Will remove the key/value set if the boolean has been set to true.
+        if(unShare){
+            preferences.edit().remove(str).commit();
+        }
+
+        //Gets the last seekbar value from sharedpreferences.
+        String lastProgress = preferences.getString(str, "0");
+        //Adds percentage after the fact so the int is standalone for methods that use it.
         String plusPercent = lastProgress+"%";
-
+        //Textview uses progress + %
         seekBarValue.setText(plusPercent);
 
+        //Set the progressBar to it's last known set value and reflect it in the % text.
         seekbar = (SeekBar) rootView.findViewById(R.id.seekBar2);
-
         seekbar.setProgress(Integer.valueOf(lastProgress));
-      //  lr = new LivingRoomActivity();
-
-//int seek=50;
-//try{              seek = lr.cursor.getInt(lr.cursor.getColumnIndex(lr.deviceHelper.KEY_seek));
-
-//              Log.i("LR", String.valueOf(lr.cursor.getInt(lr.cursor.getColumnIndex(lr.deviceHelper.KEY_seek))));
-  //            Log.i("LR", String.valueOf(seek));
-
-            //   int count = (Integer)listView.getItemAtPosition(position);
-            //  int count =0;
-            //  count++;
-
-            // int count2 = map.get(DevName);
-//                Toast.makeText(getBaseContext(), String.valueOf(count), Toast.LENGTH_SHORT).show();
-
-        //    String strFilter = KEY_Selected;
-
-
-
-
-
-  //          seekbar.setProgress(seek); //}catch(Exception e){}
-
 
 
         seekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener(){
-
          @Override
                  public void onProgressChanged(SeekBar seekbar, int progress, boolean fromUser){
                     seekBarValue.setText(String.valueOf(progress)+"%");
@@ -89,33 +69,14 @@ public class Lamp2 extends Fragment {
 
          @Override
             public void onStopTrackingTouch(SeekBar seekbar){
-            // ContentValues args = new ContentValues();
-            // args.put(deviceHelper.KEY_seek, seekbar.getProgress());
-
-//            lr.devices.update(TABLE_NAME, args, KEY_Name + "=?", new String[]{lr.DevName});
-
+             //When you stop moving the slider put the value into sharedPrefs.
              SharedPreferences sharedPref = getActivity().getSharedPreferences(str, Context.MODE_PRIVATE);
              SharedPreferences.Editor editor = sharedPref.edit();
              editor.putString(str, String.valueOf(seekbar.getProgress()));
              editor.commit();
          }
-
         });
 
-
     return rootView;
-
     }
-
-/* @Override
-    public void onDestroy(){
-
-    Fragment frag = new Fragment();
-    Bundle clickedInfo = new Bundle();
-    clickedInfo.putInt("seek", seekbar.getProgress());
-    //clickedInfo.putInt("seek",);
-    frag.setArguments(clickedInfo);
-} */
-
-
 }

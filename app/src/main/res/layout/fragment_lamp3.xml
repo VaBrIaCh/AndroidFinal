@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.yah.androidfinal.Lamp1"
+    tools:context="com.example.yah.androidfinal.OnOffLamp"
     android:textAlignment="center"
     android:background="@android:color/black"
     android:id="@+id/fraglamp3"
@@ -50,13 +50,22 @@
             android:layout_above="@+id/seekBar3"
             android:layout_alignStart="@+id/seekBar3" />
 
+        <Button
+            android:layout_above="@+id/seekText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/colorChange" />
+
         <GridLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_below="@+id/seekText2"
-            android:layout_marginTop="76dp"
+            android:layout_marginTop="34dp"
             android:rowCount="2"
             android:columnCount="4"
+            android:layout_below="@+id/seekText2"
+android:layout_centerHorizontal="true"
+
             >
 
             <Button
@@ -86,13 +95,6 @@
 
 
         </GridLayout>
-
-        <Button
-            android:layout_above="@+id/seekText2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:id="@+id/colorChange" />
 
 
     </RelativeLayout>

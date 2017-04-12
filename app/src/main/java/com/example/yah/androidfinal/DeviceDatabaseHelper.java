@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
 /**
- * Created by Yah on 2017-02-08.
+ * LIVING ROOM DB HELPER MODIFIED FROM LAB 5 by Chris Billings
  */
 
 public class DeviceDatabaseHelper extends SQLiteOpenHelper {
@@ -15,7 +15,7 @@ public class DeviceDatabaseHelper extends SQLiteOpenHelper {
     private static String DATABASE_NAME ="LivingRoom.db";
     public static final String TABLE_NAME = "Devices";
 
-    private static int VERSION_NUM =7;
+    private static int VERSION_NUM =11;
     private final Context mCtx;
 
     private DeviceDatabaseHelper dDBHelper;
@@ -26,37 +26,37 @@ public class DeviceDatabaseHelper extends SQLiteOpenHelper {
     public static final String KEY_Device = "DeviceType";
     public static final String KEY_Selected = "TimesSelected";
 
-    public static final String KEY_seek = "LastSeekPosition";
-    public static final String KEY_color = "ColourSelected";
-    public static final String KEY_blinds = "BlindsPosition";
-    public static final String KEY_channel = "LastChannel";
+    //Design Change to SharedPreferences.
+//    public static final String KEY_seek = "LastSeekPosition";
+//    public static final String KEY_color = "ColourSelected";
+//    public static final String KEY_blinds = "BlindsPosition";
+//    public static final String KEY_channel = "LastChannel";
 
-
+    //Design Change to SharedPreferences.
     public static final String[] Columns = new String[]{
             KEY_ID,
             KEY_Name,
             KEY_Device,
             KEY_Selected,
-            KEY_seek,
-            KEY_color,
-            KEY_blinds,
-            KEY_channel
+       //     KEY_seek,
+       //     KEY_color,
+       //     KEY_blinds,
+       //     KEY_channel
     };
 
+    //Design Change to SharedPreferences.
     private static final String Create_Table = "CREATE TABLE " + TABLE_NAME + "(" + KEY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," + KEY_Name + " text," + KEY_Device + " text," +
-            KEY_Selected + " INTEGER," + KEY_seek + " INTEGER," + KEY_color + " text," + KEY_blinds + " text," + KEY_channel + " INTEGER" + ")";
+    //        KEY_Selected + " INTEGER," + KEY_seek + " INTEGER," + KEY_color + " text," + KEY_blinds + " text," + KEY_channel + " INTEGER" + ")";
+    KEY_Selected + " INTEGER" + ")";
 
     public DeviceDatabaseHelper(Context ctx){
         super(ctx, DATABASE_NAME, null, VERSION_NUM);
         this.mCtx=ctx;
     }
 
-
     public Cursor getMessages(){
         return dDb.query(TABLE_NAME, Columns, null, null, null, null, KEY_Selected + " desc");
     }
-
-
 
     @Override
     public void onCreate(SQLiteDatabase db){
@@ -70,7 +70,4 @@ public class DeviceDatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
         onCreate(db);
     }
-
-
-
 }

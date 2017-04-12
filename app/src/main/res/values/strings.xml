@@ -1,18 +1,53 @@
 <resources>
+    <string name="title_activity_test_toolbar">TestToolbar</string>
     <string name="app_name">AndroidFinal</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- LIVING ROOM STRINGS by Chris Billings -->
 
+    <!-- Main Screen Strings, Buttons -->
+    <string name="livingHeader">Living Room</string>
+    <string name="backButton">Back</string>
+    <string name="addButton">Add</string>
+    <string name="removeButton">Remove</string>
+    <string name="snackbarMsg">You have %1$d connectable devices in this room</string>
+    <string name="toastMsg">Device Type is: %1$s</string>
+
+    <!-- Add Dialog Strings -->
+    <string name="editHint">Name of Device</string>
+    <string name="okayButton">Okay</string>
+    <string name="cancelButton">Cancel</string>
+
+    <!-- Array of Strings for the Spinner in add button dialog. Strings for items need to be separated in order for Conditional logic if switched to french. -->
+    <string name="array1">On/Off Lamp</string>
+    <string name="array2">Dimmer Light</string>
+    <string name="array3">Coloured Dimmer Light</string>
+    <string name="array4">Blinds</string>
+    <string name="array5">TV</string>
 
     <string-array name="LivingTypes">
-        <item>On/Off Lamp</item>
-        <item>Dimmer Light</item>
-        <item>Coloured Dimmer Light</item>
-        <item>Blinds</item>
-        <item>TV</item>
-
+        <item>@string/array1</item>
+        <item>@string/array2</item>
+        <item>@string/array3</item>
+        <item>@string/array4</item>
+        <item>@string/array5</item>
     </string-array>
 
+    <string name="tvEnt">Enter</string>
+
+    <!-- Help Header String -->
+    <string name="menu_help">
+        This is our Smart Home App! \n\n You can connect wirelessly to \n all your compatible home devices!
+        \n\n Use the Menu Bar to select which Room you \n would like. Home, Living, Kitchen or Garage.
+    </string>
+
+    <!-- Help Body Text -->
+    <string name="living_help">From the Living Room press Add to name \n your new device as well as select what \n type of functionality it will have by \n Scrolling through the options. \n\n
+        Selecting your device will allow you \nto change the various settings. \n\n Our Smart System memorizes \n your last known settings! \n Upgrading to a new Lamp? \n Remove an old entry at any time.
+        \n\n When you are done Press Back to \n return to your list of devices. \n\n by Chris Billings Version:1.0
+    </string>
+
+    <!-- End of Living Room Strings -->
+
+    <!-- TODO: ADD YOUR STRINGS -->
 
 </resources>

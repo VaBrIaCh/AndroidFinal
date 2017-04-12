@@ -1,0 +1,71 @@
+<resources>
+    <string name="title_activity_test_toolbar">TestToolbar</string>
+    <string name="app_name">AndroidFinal</string>
+
+    <!-- LIVING ROOM STRINGS by Chris Billings -->
+
+    <!-- Main Screen Strings, Buttons -->
+    <string name="livingHeader">Salon</string>
+    <string name="backButton">arriere</string>
+    <string name="addButton">Ajouter</string>
+    <string name="removeButton">Retirer</string>
+    <string name="snackbarMsg">Vous avez %1$d peripheriques connectables dans cette piece</string>
+    <string name="toastMsg">Le type d\'appareil est: %1$s</string>
+
+    <!-- Add Dialog Strings -->
+    <string name="editHint">Nom de l\'appareil</string>
+    <string name="okayButton">d\'accord</string>
+    <string name="cancelButton">Annuler</string>
+
+    <string name="tvEnt">Entrer</string>
+
+    <!-- Array of Strings for the Spinner in add button dialog. Strings for items need to be separated in order for Conditional logic if switched to french. -->
+    <string name="array1">Lampe Marche / Arret</string>
+    <string name="array2">Lumiere plus faible</string>
+    <string name="array3">Lumiere dimmer coloree</string>
+    <string name="array4">Stores</string>
+    <string name="array5">Tele</string>
+
+    <string-array name="LivingTypes">
+        <item>@string/array1</item>
+        <item>@string/array2</item>
+        <item>@string/array3</item>
+        <item>@string/array4</item>
+        <item>@string/array5</item>
+    </string-array>
+
+    <!-- Help Header String -->
+    <string name="menu_help">
+    Ceci est notre Smart Home App!
+    Vous pouvez vous connecter sans fil à tous vos appareils domestiques compatibles!
+    Utilisez la barre de menus pour sélectionner la pièce de votre choix : maison, salon, cuisine ou remise.
+    </string>
+
+<!--    This is our Smart Home App! \n\n You can connect wirelessly to \n all your compatible home devices!
+        \n\n Use the Menu Bar to select which Room you \n would like. Home, Living, Kitchen or Garage. -->
+
+    De votre salon, appuyez sur « Ajouter » pour nommer votre nouvel appareil et choisissez aussi quel type de fonctionnalité il aura en défilant à travers les options.
+    La sélection de l\’appareil vous permettra de modifier les différents paramètres.
+    Notre Smart System mémorise vos derniers paramètres enregistrés!
+    Vous achetez une nouvelle lampe? Supprimez simplement une ancienne entrée à tout moment.
+    Lorsque vous aurez terminé, appuyez sur « Retour » pour revenir à votre liste de périphériques.
+
+
+    <!-- Help Body Text -->
+    <string name="living_help">
+            De votre salon, appuyez sur « Ajouter » pour nommer votre nouvel appareil et choisissez aussi quel type de fonctionnalité il aura en défilant à travers les options.
+    La sélection de l\’appareil vous permettra de modifier les différents paramètres.
+    Notre Smart System mémorise vos derniers paramètres enregistrés!
+    Vous achetez une nouvelle lampe? Supprimez simplement une ancienne entrée à tout moment.
+    Lorsque vous aurez terminé, appuyez sur « Retour » pour revenir à votre liste de périphériques.
+    </string>
+
+    <!-- From the Living Room press Add to name \n your new device as well as select what \n type of functionality it will have by \n Scrolling through the options. \n\n
+        Selecting your device will allow you \nto change the various settings. \n\n Our Smart System memorizes \n your last known settings! \n Upgrading to a new Lamp? \n Remove an old entry at any time.
+        \n\n When you are done Press Back to \n return to your list of devices. \n\n by Chris Billings Version:1.0 -->
+
+    <!-- End of Living Room Strings -->
+
+    <!-- TODO: ADD YOUR STRINGS -->
+
+</resources>

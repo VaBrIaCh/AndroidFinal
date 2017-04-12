@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_menu"
+    >
+
+    <item android:id="@+id/home"
+        android:title="Home Settings"
+        android:icon="@drawable/home"
+        android:orderInCategory="101"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/living"
+        android:title="Living Room Settings"
+        android:icon="@drawable/livingroom"
+        android:orderInCategory="102"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/kitchen"
+        android:title="Kitchen Settings"
+        android:icon="@drawable/diningroom"
+        android:orderInCategory="103"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/garage"
+        android:title="Garage Settings"
+        android:icon="@drawable/garage"
+        android:orderInCategory="104"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/about"
+        android:title="About"
+
+        android:orderInCategory="105"
+        app:showAsAction="never" />
+
+
+</menu>
