@@ -41,6 +41,8 @@ public class TestToolbar extends AppCompatActivity {
         switch (mi.getItemId()) {
             case R.id.home:
                 Log.d("Toolbar", "Option 1 selected");
+                changer = new Intent(this, HouseMainActivity.class);
+                startActivity(changer);
 
                 break;
 
@@ -75,11 +77,28 @@ public class TestToolbar extends AppCompatActivity {
                 //This gets the name of the current class the about menu is being called from.
                 Activity host = (Activity) rootView.getContext();
 
+                helpTop.setText(R.string.menu_help);
+
                 //// TODO: If you make your <string> files in the Strings.xml you can use instanceof (YOUR ACTIVITY NAME) and then change the setTexts to your Strings.  
                 //For the LivingRoomActivity it gets set to the standard overall header and my living room help string from strings.xml
                 if (host instanceof LivingRoomActivity) {
-                    helpTop.setText(R.string.menu_help);
                     helpMid.setText(R.string.living_help);
+                }
+
+                if (host instanceof HouseMainActivity) {
+                    helpMid.setText(R.string.homeHomehelp);
+                }
+
+                if (host instanceof Garage) {
+                    helpMid.setText(R.string.garageHelp);
+                }
+
+                if (host instanceof HouseTemp) {
+                    helpMid.setText(R.string.houseHelp);
+                }
+
+                if (host instanceof Weather) {
+                    helpMid.setText(R.string.weatherHelp);
                 }
 
                 customBuilder.setView(rootView)

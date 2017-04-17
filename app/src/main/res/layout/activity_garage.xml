@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_garage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context="com.example.yah.androidfinal.Garage">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+
+        >
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            />
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- GARAGE DOOR TEXT -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/doorText"
+        android:text="@string/gDoor"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/appBar"
+        />
+
+    <!-- GARAGE DOOR TOGGLE BUTTON -->
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toggleDoor"
+        android:layout_below="@+id/doorText"
+        android:layout_alignEnd="@+id/doorText"
+        android:layout_alignParentLeft="true"
+        android:textOff="@string/open"
+        android:textOn="@string/closed"
+        />
+
+
+    <!-- GARAGE DOOR IMAGE -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/doorImg"
+        android:layout_below="@+id/doorText"
+        android:src="@drawable/closed"
+        android:layout_alignParentRight="true"
+        />
+
+    <!-- ACTIVITY PROGRESS BAR -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/doorImg"
+        android:visibility="invisible"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        />
+
+    <!-- GARAGE LIGHT TEXT -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lightText"
+        android:text="@string/gLight"
+        android:layout_below="@+id/progressBar"
+        />
+
+    <!-- GARAGE LIGHT TOGGLE BUTTON -->
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toggleLight"
+        android:layout_below="@+id/lightText"
+        android:layout_alignEnd="@+id/lightText"
+        android:layout_alignParentLeft="true"
+        android:textOff="@string/on"
+        android:textOn="@string/off"
+        />
+
+
+    <!-- LIGHT IMAGE -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lightImg"
+        android:layout_below="@+id/lightText"
+        android:src="@drawable/off"
+        android:layout_toRightOf="@id/toggleLight"
+        />
+</RelativeLayout>
