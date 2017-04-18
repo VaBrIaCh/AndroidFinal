@@ -105,7 +105,7 @@
 
     <string name="kitchen_help">
         Valeriu Ionita: Ca est le Kitchen activite.\n
-        L'activite est incomplet.\n
+        Lactivite est incomplet.\n
         Things you can do:\n
         1: Add a light, turn it off and on, and dim (the dimmer does not save preference)\n
         2: Add a microwave, with a semi-functional countdown (no save preference)\n

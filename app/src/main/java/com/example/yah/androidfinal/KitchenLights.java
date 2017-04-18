@@ -39,11 +39,11 @@ public class KitchenLights extends Fragment {
         s = args.getString("deviceName");
 
 
-        fragmentKitchenLights = new KitchenLightsAdd(KitchenLights.this);
+        //fragmentKitchenLights = new KitchenLightsAdd(KitchenLights.this);
 
-        Bundle clickedInfo = new Bundle();
-        clickedInfo.putString("deviceName", "Add Light");
-        fragmentKitchenLights.setArguments(clickedInfo);
+//        Bundle clickedInfo = new Bundle();
+//        clickedInfo.putString("deviceName", "Add Light");
+//        fragmentKitchenLights.setArguments(clickedInfo);
 
     }
 
@@ -77,8 +77,8 @@ public class KitchenLights extends Fragment {
 
 
             //Boolean for whether the toggle button is off or on.
-            Boolean check = preferences.getBoolean(s, false);
-            lightSwitch.setChecked(check);
+            //Boolean check = preferences.getBoolean(s, false);
+            //lightSwitch.setChecked(check);
 
 
         //TODO DIMMER functionality
