@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/kitchen_fragment_placeholder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_kitchen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yah.androidfinal.KitchenActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+
+        >
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+
+            />
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <TextView
+        android:text="@string/text_kitchen_main"
+        android:textSize="10pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBar"
+        android:layout_marginTop="15dp"
+        android:id="@+id/kitchen_title"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:text="@string/button_control_light_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_kitchen_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <Button
+        android:text="@string/button_control_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:id="@+id/button_control_light"
+        android:layout_below="@+id/appBar"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="@string/button_control_microwave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:id="@+id/button_control_microwave"
+        android:layout_below="@+id/button_control_light"/>
+
+    <Button
+        android:text="@string/button_control_fridge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_control_microwave"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:id="@+id/button_control_fridge" />
+
+    <Button
+        android:text="@string/button_control_stove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_control_fridge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:id="@+id/button_control_stove" />
+
+<ListView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/kitchen_list_view_item_name"
+    android:layout_below="@+id/button_control_stove">
+
+</ListView>
+
+
+</RelativeLayout>
+    </FrameLayout>

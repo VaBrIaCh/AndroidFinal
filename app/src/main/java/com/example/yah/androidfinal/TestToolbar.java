@@ -51,8 +51,8 @@ public class TestToolbar extends AppCompatActivity {
                 break;
 
             case R.id.kitchen:
-                Log.d("Toolbar", "Option 3 selected");
-
+                changer = new Intent(this, KitchenActivity.class);
+                startActivity(changer);
                 break;
 
 
@@ -80,6 +80,10 @@ public class TestToolbar extends AppCompatActivity {
                 if (host instanceof LivingRoomActivity) {
                     helpTop.setText(R.string.menu_help);
                     helpMid.setText(R.string.living_help);
+                }
+                else if(host instanceof KitchenActivity){
+                    helpTop.setText(R.string.menu_help);
+                    helpMid.setText(R.string.kitchen_help);
                 }
 
                 customBuilder.setView(rootView)

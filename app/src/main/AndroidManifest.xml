@@ -11,9 +11,9 @@
         android:label="Home"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LivingRoomActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            >
+        <activity
+            android:name=".LivingRoomActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,7 +23,11 @@
         <activity
             android:name=".TestToolbar"
             android:label="@string/title_activity_test_toolbar"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".KitchenActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
     </application>
 
 </manifest>

@@ -48,6 +48,49 @@
 
     <!-- End of Living Room Strings -->
 
+
+    <!-- Start of Kitchen Strings -->
+
+
+    <string name="text_kitchen_main">Kitchen App</string>
+    <string name="button_control_light_add">Add</string>
+    <string name="button_control_light_remove">Remove</string>
+    <string name="button_control_light">Light Controls</string>
+    <string name="button_control_microwave">Microwave Controls</string>
+    <string name="button_control_fridge">Fridge Controls</string>
+    <string name="button_control_stove">Stove Controls</string>
+    <string name="text_kitchen_lights">Kitchen Lights</string>
+    <string name="text_kitchen_microwave">Microwave</string>
+    <string name="text_kitchen_add_name">Item Name: </string>
+    <string name="percentage">"0%"</string>
+
+    <string name="item_selection_1">Light</string>
+    <string name="item_selection_2">Microwave</string>
+    <string name="item_selection_3">Stove</string>
+    <string name="item_selection_4">Fridge</string>
+    <string name="item_selection_5">Freezer</string>
+
+    <string-array name="kitchen_item_selection_list">
+        <item>@string/item_selection_1</item>
+        <item>@string/item_selection_2</item>
+        <item>@string/item_selection_3</item>
+        <item>@string/item_selection_4</item>
+        <item>@string/item_selection_5</item>
+    </string-array>
+
+
+    <string name="kitchen_help">
+        Valeriu Ionita: This is the Kitchen activity.\n
+        Unfortunately it is incomplete, but it does contain buttons, fragments, and a semi-functional database\n
+        Things you can do:\n
+        1: Add a light, turn it off and on, and dim (the dimmer does not save preference)\n
+        2: Add a microwave, with a semi-functional countdown (no save preference)\n
+        3: Navigate to a couple of fragments using buttons and listview\n
+        4: Added items are saved to the database\n
+    </string>
+    <!-- End of Kitchen Strings -->
+
+
     <!-- TODO: ADD YOUR STRINGS -->
 
 </resources>
