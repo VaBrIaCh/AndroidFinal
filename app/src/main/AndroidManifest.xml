@@ -11,15 +11,33 @@
         android:label="Home"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".LivingRoomActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+
+
+
+        <activity android:name=".LivingRoomActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".HouseMainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity android:name=".Weather"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity android:name=".HouseTemp"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity android:name=".Garage"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+
+
         <activity
             android:name=".TestToolbar"
             android:label="@string/title_activity_test_toolbar"

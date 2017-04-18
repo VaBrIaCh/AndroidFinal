@@ -69,6 +69,10 @@
 
 
 
+
+
+
+
     <!-- Start of Kitchen Strings -->
 
 
@@ -111,6 +115,113 @@
     <!-- End of Kitchen Strings -->
 
 
+
+
+
+
+    <!-- House Activity Strings -->
+
+    <string name="garage">"Garage"</string>
+    <string name="houseTemperature">"Température de la Maison"</string>
+    <string name="weather">"Météo"</string>
+    <string name="weatherLulz">"Météo!!!"</string>
+    <string name="theCurrentW">"La température actuelle est: "</string>
+    <string name="gDoor">"Porte de Garage"</string>
+    <string name="gLight">"Lumière de Garage"</string>
+    <string name="open">"Ouvrir"</string>
+    <string name="closed">"Fermer"</string>
+    <string name="on">"Allumé"</string>
+    <string name="off">"Éteignez"</string>
+    <string name="setTemp">"Régler la Température de la Maison:  "</string>
+    <string name="degrees">"°C"</string>
+    <string name="newMsg">"Nouveau Message"</string>
+    <string name="cancel">"Annuler"</string>
+    <string name="ok">"D'accord"</string>
+    <string name="set">"Réglée"</string>
+    <string name="scheduleText">"Horaire"</string>
+    <string name="selectTime">"Sélectionnez l'heure"</string>
+    <string name="selectTemp">"Sélectionnez la température"</string>
+    <string name="add">"AJOUTER"</string>
+    <string name="currentWeather">"Météo Actuelle"</string>
+    <string name="minTemp">"Température Minimale"</string>
+    <string name="maxTemp">"Température maximale"</string>
+    <string name="gLightOn">"Lumière de garage allumée!"</string>
+    <string name="houseTemp">"HouseTemp"</string>
+    <string name="validTemp">"Entrez une température valide \nentre 16°C et 24°C"</string>
+    <string name="deleteEntry">"Supprimer cette entrée?"</string>
+    <string name="yes">"OUI?"</string>
+    <string name="no">"NON"</string>
+    <string name="min">"Min: "</string>
+    <string name="max">"Max: "</string>
+    <string name="cTemp">"Température actuelle: "</string>
+    <string name="shorts">"Le temps des shorts! Tape m'en cinq!"</string>
+    <string name="sweater">"Apportez un pull au cas où!"</string>
+    <string name="jacket">"Ce n'est pas gelé, mais porte une veste!"</string>
+    <string name="parka">"Ensemble! C'est froid!"</string>
+
+    <string name="garageHelp">
+        "- Cliquez sur OK pour voir la température actuelle, et la min et max
+        \n- Un popup apparaîtra également en recommandant ce qu'il faut porter en fonction de la température actuelle"
+    </string>
+
+    <string name="houseHelp">
+        "-	Réglez la température de la maison avec l'entrée de texte (entre 16-24) et cliquez sur SET
+        \n- Pour ajouter une température programmée, choisissez une heure et une température et cliquez sur ADD
+        \n- Vous pouvez supprimer un élément planifié en cliquant dessus et, lorsque vous y êtes invité, cliquez sur YES"
+    </string>
+
+    <string name="weatherHelp">
+        "- Cliquer sur OPEN ouvrira la porte du garage et affichera la porte ouverte, et allumera automatiquement la lumière du garage si elle n'est pas déjà allumée
+        \n- Cliquer sur fermer fermer la porte du garage et afficher la porte fermée
+        \n- En cliquant sur ON, on allume la lumière du garage
+        \n- Cliquez sur OFF pour éteindre la lumière du garage
+        \n- Une barre de progression complète et rouge indique que la porte est ouverte et que la lumière est allumée
+        \n- La moitié d'une barre indique que l'on est ouvert ou sur
+        \n- Une barre vide indique que la porte est fermée et que la lumière est éteinte"
+    </string>
+
+    <string-array name="temperature_array">
+        <item>"--"</item>
+        <item>"16"</item>
+        <item>"17"</item>
+        <item>"18"</item>
+        <item>"19"</item>
+        <item>"20</item>
+        <item>"21"</item>
+        <item>"22"</item>
+        <item>"23"</item>
+        <item>"24"</item>
+    </string-array>
+
+    <string-array name="time_array">
+        <item>"--"</item>
+        <item>"00:00"</item>
+        <item>"01:00"</item>
+        <item>"02:00"</item>
+        <item>"03:00"</item>
+        <item>"04:00"</item>
+        <item>"05:00"</item>
+        <item>"06:00"</item>
+        <item>"07:00"</item>
+        <item>"08:00"</item>
+        <item>"09:00"</item>
+        <item>"10:00"</item>
+        <item>"11:00"</item>
+        <item>"12:00"</item>
+        <item>"13:00"</item>
+        <item>"14:00"</item>
+        <item>"15:00"</item>
+        <item>"16:00"</item>
+        <item>"17:00"</item>
+        <item>"18:00"</item>
+        <item>"19:00"</item>
+        <item>"20:00"</item>
+        <item>"21:00"</item>
+        <item>"22:00"</item>
+        <item>"23:00"</item>
+    </string-array>
+
+    <!-- End of House Activity Strings -->
 
 
 

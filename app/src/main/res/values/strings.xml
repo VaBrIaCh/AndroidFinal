@@ -49,6 +49,7 @@
     <!-- End of Living Room Strings -->
 
 
+
     <!-- Start of Kitchen Strings -->
 
 
@@ -90,6 +91,117 @@
     </string>
     <!-- End of Kitchen Strings -->
 
+
+    <!-- House Activity Strings by Bryan Flood-->
+
+    <string name="garage">"Garage"</string>
+    <string name="houseTemperature">"House Temperature"</string>
+    <string name="weather">"Weather"</string>
+    <string name="weatherLulz">"Weather!!!"</string>
+    <string name="theCurrentW">"The current temperature is: "</string>
+    <string name="gDoor">"Garage Door"</string>
+    <string name="gLight">"Garage Light"</string>
+    <string name="open">"Open"</string>
+    <string name="closed">"Close"</string>
+    <string name="on">"On"</string>
+    <string name="off">"Off"</string>
+    <string name="setTemp">"Set House Temperature:  "</string>
+    <string name="degrees">"Â°C"</string>
+    <string name="newMsg">"New Message"</string>
+    <string name="cancel">"Cancel"</string>
+    <string name="ok">"OK"</string>
+    <string name="set">"SET"</string>
+    <string name="scheduleText">"Schedule"</string>
+    <string name="selectTime">"Select Time"</string>
+    <string name="selectTemp">"Select Temperature"</string>
+    <string name="add">"ADD"</string>
+    <string name="currentWeather">"Current Weather"</string>
+    <string name="minTemp">"Minimum Temperature"</string>
+    <string name="maxTemp">"Maximum Temperature"</string>
+    <string name="gLightOn">"Garage Light Turned On!"</string>
+    <string name="houseTemp">"HouseTemp"</string>
+    <string name="validTemp">"Enter a valid temperature \nbetween 16Â°C and 24Â°C"</string>
+    <string name="deleteEntry">"Delete this entry?"</string>
+    <string name="yes">"YES?"</string>
+    <string name="no">"NO"</string>
+    <string name="min">"Min: "</string>
+    <string name="max">"Max: "</string>
+    <string name="cTemp">"Current Temp: "</string>
+    <string name="shorts">"Shorts weather! High five!"</string>
+    <string name="sweater">"Bring a sweater just in case!"</string>
+    <string name="jacket">"It's not freezing, but wear a jacket!"</string>
+    <string name="parka">"Bundle up! It's cold out!"</string>
+
+    <string name="weatherHelp">
+        "- Click OK to see the current temperature, and the projected min and max
+        \n- A snackbar will also appear recommending what to wear based on the current temperature
+        \n\n by Bryan Flood Version: 1.0
+        "
+    </string>
+
+    <string name="houseHelp">
+        "-	Set house temperature with text input (between 16-24) and click SET
+        \n- To add a scheduled temperature, choose a time and a temperature and click ADD
+        \n- You can delete a scheduled item by clicking on it and, when prompted, click YES
+        \n\n by Bryan Flood Version: 1.0"
+
+    </string>
+
+    <string name="garageHelp">
+        "- Clicking OPEN will open the garage door and display the opened door, and will also automatically turn on the garage light if it not already on
+        \n- Clicking CLOSE will close the garage door and display the closed door
+        \n- Clicking ON will turn on the garage light
+        \n- Clicking OFF will turn off the garage light
+        \n- A full, red progress bar indicates that the door is open and the light is on
+        \n- Half a bar indicates that one is open or on
+        \n- An empty bar indicates the door is closed and the light is off
+        \n\n by Bryan Flood Version: 1.0"
+    </string>
+
+    <string name="homeHomehelp">\n\n by Bryan Flood Version: 1.0</string>
+
+    <string-array name="temperature_array">
+        <item>"--"</item>
+        <item>"16"</item>
+        <item>"17"</item>
+        <item>"18"</item>
+        <item>"19"</item>
+        <item>"20</item>
+        <item>"21"</item>
+        <item>"22"</item>
+        <item>"23"</item>
+        <item>"24"</item>
+    </string-array>
+
+    <string-array name="time_array">
+        <item>"--"</item>
+        <item>"00:00"</item>
+        <item>"01:00"</item>
+        <item>"02:00"</item>
+        <item>"03:00"</item>
+        <item>"04:00"</item>
+        <item>"05:00"</item>
+        <item>"06:00"</item>
+        <item>"07:00"</item>
+        <item>"08:00"</item>
+        <item>"09:00"</item>
+        <item>"10:00"</item>
+        <item>"11:00"</item>
+        <item>"12:00"</item>
+        <item>"13:00"</item>
+        <item>"14:00"</item>
+        <item>"15:00"</item>
+        <item>"16:00"</item>
+        <item>"17:00"</item>
+        <item>"18:00"</item>
+        <item>"19:00"</item>
+        <item>"20:00"</item>
+        <item>"21:00"</item>
+        <item>"22:00"</item>
+        <item>"23:00"</item>
+    </string-array>
+
+    <!-- End of House Activity Strings -->
 
     <!-- TODO: ADD YOUR STRINGS -->
 
