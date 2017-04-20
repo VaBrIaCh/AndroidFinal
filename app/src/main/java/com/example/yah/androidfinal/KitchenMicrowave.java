@@ -1,6 +1,8 @@
 package com.example.yah.androidfinal;
 
+import android.content.Context;
 import android.os.CountDownTimer;
+import android.os.Vibrator;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -23,6 +25,9 @@ public class KitchenMicrowave extends Fragment {
     String timer = "00:00";
     TextView timerDisplay;
     Boolean timerReset = false;
+    View rootView;
+
+
 
     public KitchenMicrowave() {
     }
@@ -44,7 +49,7 @@ public class KitchenMicrowave extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_kitchen_microwave, container, false);
+        rootView = inflater.inflate(R.layout.fragment_kitchen_microwave, container, false);
 
         //The header text which is based on the passed Listview clicked Item Name.
         TextView title = (TextView) rootView.findViewById(R.id.text_kitchen_lights);
@@ -196,6 +201,10 @@ public class KitchenMicrowave extends Fragment {
 
             public void onFinish() {
                 timerDisplay.setText("END");
+
+                Vibrator mVibrator = (Vibrator) kitchenActivity.getSystemService(Context.VIBRATOR_SERVICE);
+
+                mVibrator.vibrate(500);
             }
         }.start();
 

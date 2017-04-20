@@ -112,19 +112,7 @@ public class KitchenLights extends Fragment {
 //---------------------------------------------
 
 //TODO Functionality:
-        Button lightAdd = (Button) rootView.findViewById(R.id.button_control_light_add);
-        lightAdd.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
 
-                //todo: REQUIREMENT 2: LOADING FRAGMENT
-                getFragmentManager().beginTransaction()
-                        .add(R.id.kitchen_fragment_placeholder, fragmentKitchenLights)
-                        .commit();
-
-                //--------------END OF KITCHEN LIGHTS FRAGMENT
-            }
-        });
 
         Button lightRemove = (Button) rootView.findViewById(R.id.button_control_light_remove);
         lightRemove.setOnClickListener(new View.OnClickListener(){

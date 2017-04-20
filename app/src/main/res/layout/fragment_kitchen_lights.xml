@@ -44,17 +44,6 @@
 
 
 
-    
-
-
-    <Button
-        android:text="@string/button_control_light_add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button_control_light_add"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        />
 
     <Button
         android:text="@string/button_control_light_remove"
